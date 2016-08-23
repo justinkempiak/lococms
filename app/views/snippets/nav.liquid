@@ -1,3 +1,67 @@
+<!-- Top Bar --->
+
+<div class="header-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <p id="logo" class="logo">
+          <a href="index.html" rel="home">
+            <img src="images/common/logo.png" alt="brainstorm" />
+          </a>
+        </p><!-- /.logo -->
+        <div class="info">
+          <div class="address">
+            <p class="icon"><i class="ion-android-pin"></i></p>
+            <p class="text">Call Today 020 8567 0707<br><span>51 Uxbridge Road, San Francisco W7 3PX</span></p>
+          </div>
+          <div class="open-hours">
+            <p class="icon"><i class="ion-android-watch"></i></p>
+            <p class="text">Open Hours<br><span>Mon - Sat: 8 am - 5 pm, Sunday: CLOSED </span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header -->
+<header id="header" class="header header-sticky">
+  <div class="header-wrap">
+    <div class="header-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="btn-menu"></div>
+            <nav id="mainnav" class="mainnav">
+              <ul class="menu">
+              <li class="{% if page.handle == 'home' %}active{% endif %}">
+                <a href="{% path_to home %}">Home</a>
+                </li>
+                <li>
+                {% for page_in_nav in site.pages %}
+                  {% if page_in_nav.depth == 1 %}
+                    <li class="{% if page.fullpath == page_in_nav.fullpath %}active{% endif %}">
+                      {% link_to page_in_nav %}
+                  {% endif %}
+                {% endfor %}
+                </li>
+
+               </ul><!-- /.menu -->
+            </nav>
+          </div>
+          <div class="col-sm-3">
+            <p class="get-appointment">
+              <a href="#">Contact Us</a>
+            </p>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+
+
+<!--- OLD WORK HERE
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -23,4 +87,4 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> --->
