@@ -1,0 +1,61 @@
+.loading-effect-2 > span,
+.loading-effect-2 > span:before,
+.loading-effect-2 > span:after {
+	border: 2px solid #b64121;
+}
+a,
+h2.title-post a:hover,
+.author > p.description span,
+.testimonial03 .media span,
+ul.filter li.active a,
+.teammember article h3,
+.partners li h3,
+.footer .footer-info p.phone,
+.icon-box i,
+.icon-box02 i,
+.feature-box .text h3 span,
+.testimonial .text span.name,
+.testimonial02 .item .info:before {
+	color: #b64121;
+}
+h1 { font: 50px/56px "Poppins", sans-serif;}h2 { font: 30px/32px "Poppins", sans-serif;}h3 { font: 24px/28px "Poppins", sans-serif;}h4 { font: 22px/26px "Poppins", sans-serif;}h5 { font: 20px/24px "Poppins", sans-serif;}h6 { font: 18px/22px "Poppins", sans-serif;}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+#mainnav ul.sub-menu,
+.post .media p.date,
+.page-about .main-content ul li div:after,
+.header-nav,
+ul.icon-list li:before,
+.teammember.list article .readmore a:hover,
+.btn-cons a,
+.more-info,
+.offer .owl-item .item ul li:before {
+	background-color: #b64121;
+}
+
+.sidebar-nav ul li a.active {
+	border-left: 4px solid #b64121;
+}
+
+.testimonial02 .item .info:before {
+	color: #b64121;
+	border: 1px solid #b64121;
+}
+
+/*=====================*/
+.is-sticky .header-nav,
+.feature-post .feature h3 a,
+.feature-post .feature:hover h3 a {
+    background-color: rgba(139,48,23,0.9);
+}
+.get-appointment a {
+    background-color: #8b3017;
+}
+#mainnav ul.sub-menu > li > a {
+    border-top: 1px solid #6a4746;
+}
+.btn-cons a:hover {
+    background-color: #74230c;
+}

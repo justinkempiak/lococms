@@ -1,0 +1,35 @@
+name: News
+description: Just a simple blog module
+order_by: posted_at
+order_direction: desc
+slug: news
+label_field_name: title
+fields:
+- title:
+    label: Title
+    type: string
+    hint: The title of the article
+- posted_at:
+    label: Posted at
+    type: date
+    hint: The date when the article has been or will be posted.
+- body:
+    label: Body
+    type: text
+    text_formatting: html
+    hint: The body of the article
+- image: # The lowercase, underscored name of the field
+    label: Featured Image # Human readable name of the field
+    type: file
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+- news_category: # The lowercase, underscored name of the field
+    label: News Category # Human readable name of the field
+    type: many_to_many
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+    class_name: news_category
+    inverse_of: news
+    ui_enabled: true
